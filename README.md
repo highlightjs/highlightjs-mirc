@@ -18,7 +18,7 @@ If you're not using a build system and just want to embed this in your webpage:
 <script type="text/javascript" src="/path/to/highlightjs-mirc/mirc.js"></script>
 <script type="text/javascript">
     hljs.registerLanguage('mirc', window.hljsDefineMIRC);
-    hljs.initHighlightingOnLoad();
+    hljs.highlightAll();
 </script>
 ```
 
@@ -29,7 +29,7 @@ var hljs = require('highlightjs');
 var hljsDefineMIRC = require('highlightjs-mirc');
 
 hljsDefineMIRC(hljs);
-hljs.initHighlightingOnLoad();
+hljs.highlightAll();
 ```
 
 ## Attributions
